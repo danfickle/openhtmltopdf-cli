@@ -10,7 +10,7 @@ You will need Java (JRE or JDK) installed on your machine (version 8 or above). 
 
 ## Download
 
-Coming soon.
+Please visit the [releases](https://github.com/danfickle/openhtmltopdf-cli/releases) page.
 
 ## Usage
 
