@@ -6,7 +6,7 @@
 
   <groupId>com.openhtmltopdf.cli</groupId>
   <artifactId>openhtmltopdf-cli</artifactId>
-  <version>1.0.10-SNAPSHOT</version>
+  <version>1.0.10-1</version>
 
   <name>openhtmltopdf-cli</name>
   <url>https://github.com/danfickle/openhtmltopdf-cli/</url>
