@@ -64,6 +64,12 @@ public class App
         )
         boolean block;
 
+        @Option(
+            names = { "--accessible", "-a"},
+            description = "Force PDF/UA Conformance"
+        )
+        boolean accessible;
+
         @Override
         public Integer call() throws Exception {
             if (quiet && !verbose) {
@@ -93,6 +99,11 @@ public class App
                     builder.withW3cDocument(doc, input.getAbsoluteFile().toURI().toURL().toExternalForm());
                 } else {
                     builder.withFile(input);
+                }
+
+                if (accessible) {
+                    builder.usePdfUaAccessbility(true);
+                    builder.usePdfAConformance(PdfRendererBuilder.PdfAConformance.PDFA_3_U);
                 }
 
                 builder.toStream(os);
